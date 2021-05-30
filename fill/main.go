@@ -5,4 +5,4 @@ import (
 	_ "github.com/rwxrob/cmdbox-fill"
 )
 
-func main() { cmdbox.Execute("fill") }
+func main() { cmdbox.Execute() }
