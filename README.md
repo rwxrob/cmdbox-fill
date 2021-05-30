@@ -16,9 +16,8 @@ As standalone ...
 
 ```
 go install github.com/rwxrob/cmdbox-fill/fill@latest
+# go get is deprecated
 ```
-
-*Remember, `go get` is now deprecated for installs.*
 
 As composable CmdBox `init` module ...
 
