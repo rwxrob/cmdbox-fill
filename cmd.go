@@ -15,9 +15,10 @@ func init() {
 		The *fill* command simply replaces all {n} fields within the text
 		sent from standard input with the associated argument (starting with
 		#1). Use care when passing text that might accidentally have such
-		fields mistakenly replaced. `
+		fields mistakenly replaced. As for all CmdBox composites the help
+		and version first arguments have reserved meaning.`
 
-	x.Method = func(args []string) (err error) {
+	x.Method = func(args []string) error {
 		if len(args) == 0 {
 			return x.UsageError()
 		}
